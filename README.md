@@ -1,4 +1,4 @@
-### 🎬 Análise e Faxina em Dados de Cinema do Brasil 🧹
+### 🎬 Tratamento e Análise de Dados de Cinema do Brasil 🧹
 
 Este projeto é uma jornada de exploração no universo dos dados de bilheteria e salas de cinema do Brasil! 🕵️‍♀️ Começamos com um monte de dados brutos, todos misturados, cheios de repetições e inconsistências. Um verdadeiro quebra-cabeça! 🧩
 
