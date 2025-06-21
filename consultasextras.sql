@@ -1,6 +1,6 @@
 --CONSULTAS EXTRAS--
 
------quantidade de complexos itinerantes e não itenerantes-------------------
+-----quantidade de complexos itinerantes e não itinerantes-------------------
 COPY (
 	SELECT complexo_itinerante, COUNT(*)
 	FROM complexo
