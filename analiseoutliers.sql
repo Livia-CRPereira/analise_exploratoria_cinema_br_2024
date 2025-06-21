@@ -28,12 +28,19 @@ WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
 -----quantidade de filmes por distribuidora-------------------------------------------------
 COPY (
-select d.razao_social_distribuidora, count(s.cpb_roe) as quantidade_filmes
-from protocolo p, secao s, distribuidora d 
-where p.cnpj_distribuidora =d.cnpj_distribuidora
-and p.nr_protocolo_envio =s.nr_protocolo_envio
-group by d.razao_social_distribuidora 
-order by count(s.cpb_roe) desc
+SELECT 
+    d.razao_social_distribuidora, 
+    COUNT(DISTINCT s.cpb_roe) AS quantidade_filmes
+FROM 
+    protocolo p
+JOIN 
+    distribuidora d ON p.cnpj_distribuidora = d.cnpj_distribuidora
+JOIN 
+    secao s ON p.nr_protocolo_envio = s.nr_protocolo_envio
+GROUP BY 
+    d.razao_social_distribuidora
+ORDER BY 
+    quantidade_filmes DESC
 ) TO '/Users/carolinabarcellos/saidas/filme_distribuidoras.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
