@@ -57,7 +57,7 @@ Nossa metodologia seguiu um ciclo rigoroso de **engenharia reversa e AED**, foca
     * **Desafios na Normalização e Carga:** Dentre os diversos desafios, alguns se destacaram:
         * **`registro_sala` nulo na Bilheteria:** 6376 linhas da bilheteria apresentavam `registro_sala` nulo. Esses registros, correspondendo a menos de 1% do total, foram excluídos para garantir a integridade dos relacionamentos na base normalizada.
         * **Mapeamento de `registro_grupo_exibidor`:** A tabela `salascomplexos` não possuía `registro_grupo_exibidor`, exigindo um `JOIN` intermediário via `registro_exibidor` com a tabela de bilheteria para associar grupos a exibidores.
-        * **Chave Primária para `Secao`:** Como a tabela de bilheteria original não possuía uma chave primária explícita para cada sessão, uma coluna `id_secao` auto-incremental foi criada na tabela `secao` para garantir a unicidade de cada registro.
+        * **Chave Primária para `Secao`:** Como a tabela de bilheteria original não possuía uma chave primária explícita para cada seção, uma coluna `id_secao` auto-incremental foi criada na tabela `secao` para garantir a unicidade de cada registro.
     * A definição de chaves primárias e estrangeiras foi crucial para garantir a integridade referencial do novo modelo.
 
 ## 🔍 Análises Exploratórias e Insights Obtidos
