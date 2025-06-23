@@ -1,4 +1,4 @@
-----quantidade de nulos distribuidora --------
+----quantidade de nulos na tabela distribuidora --------
 COPY (
 	SELECT * 
 	FROM (
@@ -13,7 +13,7 @@ COPY (
 ) TO '/Users/carolinabarcellos/saidas/quantidade_nulos_distribuidora.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
------quantidade nulos complexo-------
+-----quantidade de nulos na tabela complexo -------------
 
 COPY (
 	SELECT * FROM (
@@ -38,7 +38,7 @@ COPY (
 ) TO '/Users/carolinabarcellos/saidas/quantidade_nulos_complexo.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
----quantidade nulos sala------
+---quantidade de nulos na tabela sala -----------------
 COPY (
 	SELECT * 
 	FROM (
@@ -62,7 +62,7 @@ COPY (
 ) TO '/Users/carolinabarcellos/saidas/quantidade_nulos_sala.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
----quantidade nulos da tabela seção-------
+---quantidade de nulos na tabela seção ---------------------
 COPY (
 	SELECT * 
 	FROM (
@@ -81,7 +81,7 @@ COPY (
 ) TO '/Users/carolinabarcellos/saidas/quantidade_nulos_secao.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
----quantidade de nulos da tabela protocolo------
+---quantidade de nulos na tabela protocolo -------------------
 COPY (
 	SELECT * 
 	FROM (
@@ -97,7 +97,7 @@ COPY (
 ) TO '/Users/carolinabarcellos/saidas/quantidade_nulos_protocolo.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
---quantidade de nulos na tabela grupo_exibidor------
+--quantidade de nulos na tabela grupo_exibidor -------------------
 COPY (
 	SELECT * 
 	FROM (
@@ -112,7 +112,7 @@ COPY (
 ) TO '/Users/carolinabarcellos/saidas/quantidade_nulos_grupo_exibidor.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
----quantidade de nulos na tabela exibidor-------------
+---quantidade de nulos na tabela exibidor ------------------------
 COPY (
 	SELECT * 
 	FROM (
@@ -129,7 +129,7 @@ COPY (
 ) TO '/Users/carolinabarcellos/saidas/quantidade_nulos_exibidor.csv'
 WITH (FORMAT CSV, HEADER, DELIMITER ',');
 
-----quantidade de nulos na tabela filme----------------
+----quantidade de nulos na tabela filme ----------------------------
 COPY (
 	SELECT * 
 	FROM (
