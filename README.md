@@ -91,7 +91,8 @@ Com o banco de dados agora limpo, normalizado e estruturado, realizamos análise
     * Investigamos a correlação entre a **quantidade de filmes lançados por distribuidora e o público total**. Observou-se uma correlação positiva, porém de intensidade moderada a fraca ($R^2 = 0,31$). Isso sugere que, embora lançar mais filmes tenda a aumentar o público, essa relação não é tão expressiva. A quantidade de filmes é apenas um dos fatores que contribuem para o desempenho de público das distribuidoras.
 
 6.  **Descobertas Adicionais na Qualidade dos Dados:**
-    * A análise da tabela `filme` revelou que a coluna `titulo_brasil` apresentava nulos significativos para filmes de produção brasileira. Isso ocorre porque filmes brasileiros geralmente têm apenas `titulo_original` preenchido. Essa observação levou à proposição de um tratamento de dados para padronizar essa informação (copiar `titulo_original` para `titulo_brasil` quando `pais_obra` for 'BRASIL' e `titulo_brasil` for nulo).
+    * **Script SQL:** `scripts_sql/uptade_filme.sql`
+    * A análise da tabela `filme` revelou que a coluna `titulo_brasil` apresentava nulos significativos para filmes de produção brasileira. Isso ocorre porque filmes brasileiros geralmente têm apenas `titulo_original` preenchido. Essa observação levou à proposição de um tratamento de dados para padronizar essa informação.
 
 ## 📂 Estrutura do Repositório
 
