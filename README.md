@@ -95,4 +95,11 @@ Com o banco de dados agora limpo, normalizado e estruturado, realizamos análise
 
 ## 📂 Estrutura do Repositório
 
-Seu repositório está organizado da seguinte forma:
+Nosso repositório está organizado da seguinte forma:
+* **`Doc/`**: Armazena a documentação textual e visual do trabalho.
+* **`Tabelas/`**: Contém os **arquivos CSV normalizados**.
+* **`scripts python/`**: Contém os scripts Python utilizados no projeto:
+* **`scripts_sql/`**: Armazena todos os scripts SQL para interação com o banco de dados PostgreSQL, incluindo a criação de tabelas, carga inicial, normalização e consultas de análise. Os nomes dos scripts (`cria_tabelas.sql`, `carrega_tabelas.sql`, etc.) estão aqui.
+* **`README.md`**: Este arquivo, que serve como a porta de entrada do projeto, fornecendo uma visão geral, objetivos, metodologia e instruções para replicação.
+* **`testes.sql`**: Um arquivo auxiliar com scripts SQL avulsos para testes e depurações rápidas durante o desenvolvimento.
+
